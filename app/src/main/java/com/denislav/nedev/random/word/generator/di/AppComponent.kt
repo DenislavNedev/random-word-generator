@@ -3,6 +3,7 @@ package com.denislav.nedev.random.word.generator.di
 import com.denislav.nedev.random.word.generator.RandomWordGeneratorApplication
 import com.denislav.nedev.random.word.generator.di.modules.AppModule
 import com.denislav.nedev.random.word.generator.di.modules.ApplicationBindingModule
+import com.denislav.nedev.random.word.generator.di.modules.DatabaseModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -14,6 +15,7 @@ import javax.inject.Singleton
     modules = [
         AndroidInjectionModule::class,
         AppModule::class,
+        DatabaseModule::class,
         ViewModelBuilderModule::class,
         ApplicationBindingModule::class,
     ]
